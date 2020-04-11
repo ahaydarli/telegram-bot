@@ -28,10 +28,10 @@ def respond():
     text = update.message.text.encode('utf-8').decode()
     print("got text message :", text)
     try:
-        if text in ['/start', '/oglan', '/oglan@oglanlig_bot']:
+        if text in ['/start', '/oglan', '/oglan@oglanliq_bot']:
             bot_welcome = 'Oğlanlıq'
             bot.sendMessage(chat_id=chat_id, text=bot_welcome)
-        elif text in ['/oglanlig', '/oglanlig@oglanlig_bot']:
+        elif text in ['/oglanlig', '/oglanlig@oglanliq_bot']:
             percent = randrange(1, 100, 1)
             bot_welcome = f'{user_name} - Oğlanlığın {percent}% 🌈'
             bot.sendMessage(chat_id=chat_id, text=bot_welcome)
