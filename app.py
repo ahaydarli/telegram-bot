@@ -32,7 +32,7 @@ def respond():
         bot.sendMessage(chat_id=chat_id, text=bot_welcome)
     elif text in ['/oglanlig', '/oglanlig@oglanlig_bot']:
         percent = randrange(1, 100, 1)
-        bot_welcome = f'{user_name} - Oğlanlığım {percent}% 🌈'
+        bot_welcome = f'{user_name} - Oğlanlığın {percent}% 🌈'
         bot.sendMessage(chat_id=chat_id, text=bot_welcome)
 
     # else:
