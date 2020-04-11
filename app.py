@@ -6,7 +6,7 @@ import telegram
 
 bot_token = '1143155948:AAHsofCYDgdh518dJ6abvck1otyahoxBMKM'
 bot_user_name = '@oglanlig_bot'
-URL = 'https://f8002793.ngrok.io/'
+URL = 'https://oglan-bot.herokuapp.com/'
 
 global bot
 global TOKEN
