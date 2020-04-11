@@ -4,7 +4,7 @@ from random import randrange
 from flask import Flask, request
 import telegram
 
-bot_token = '1246937370:AAETkDNSx5-FZL4ty-2Ni7eUB-2_yAXUisw'
+bot_token = '1246937370:AAGF0Q71EMQt8Fh0vICggmd7sBj1eJxozzc'
 bot_user_name = '@oglanliq_bot'
 URL = 'https://oglanlig-bot2.herokuapp.com/'
 
