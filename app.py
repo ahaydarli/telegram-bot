@@ -27,22 +27,16 @@ def respond():
 
     text = update.message.text.encode('utf-8').decode()
     print("got text message :", text)
-    if text in ['/start', '/oglan', '/oglan@oglanlig_bot']:
-        bot_welcome = 'Oğlanlıq'
-        bot.sendMessage(chat_id=chat_id, text=bot_welcome)
-    elif text in ['/oglanlig', '/oglanlig@oglanlig_bot']:
-        percent = randrange(1, 100, 1)
-        bot_welcome = f'{user_name} - Oğlanlığın {percent}% 🌈'
-        bot.sendMessage(chat_id=chat_id, text=bot_welcome)
-
-    # else:
-    #     try:
-    #         text = re.sub(r"\W", "_", text)
-    #         bot_welcome = 'Oğlanlıq'
-    #         bot.sendPhoto(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
-    #     except Exception:
-    #         # if things went wrong
-    #         bot.sendMessage(chat_id=chat_id, text="Oğlanlığında problem var", reply_to_message_id=msg_id)
+    try:
+        if text in ['/start', '/oglan', '/oglan@oglanlig_bot']:
+            bot_welcome = 'Oğlanlıq'
+            bot.sendMessage(chat_id=chat_id, text=bot_welcome)
+        elif text in ['/oglanlig', '/oglanlig@oglanlig_bot']:
+            percent = randrange(1, 100, 1)
+            bot_welcome = f'{user_name} - Oğlanlığın {percent}% 🌈'
+            bot.sendMessage(chat_id=chat_id, text=bot_welcome)
+    except Exception:
+        bot.sendMessage(chat_id=chat_id, text="Oğlanlığında problem var !!!", reply_to_message_id=msg_id)
 
     return 'ok'
 
